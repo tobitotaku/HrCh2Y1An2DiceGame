@@ -7,8 +7,8 @@ import os
 
 # global variables
 # todo 1: std_number must have the correct student number
-std_number = '0000000'
-
+std_number = '1042623'
+# name student: Tobias Roessingh
 
 # game parameters. Do Not change these variables.
 player_one = 'peter'
