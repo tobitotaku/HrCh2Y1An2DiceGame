@@ -1,0 +1,26 @@
+
+
+CASE 0
+
+Initial result for case:{'peter': {'sides': 4, 'num': 9}, 'colin': {'sides': 6, 'num': 6}} With Probabilities:{'peter': 0.573491, 'colin': 0.355629, 'Draw': 0.07088}
+Final result for fair game in case:{'peter': {'sides': 4, 'num': 14}, 'colin': {'sides': 6, 'num': 10}} With Probabilities:{'peter': 0.470376, 'colin': 0.471534, 'Draw': 0.05809}
+
+CASE 1
+
+Initial result for case:{'peter': {'sides': 4, 'num': 3}, 'colin': {'sides': 9, 'num': 2}} With Probabilities:{'peter': 0.24301, 'colin': 0.678873, 'Draw': 0.078117}
+Final result for fair game in case:{'peter': {'sides': 4, 'num': 6}, 'colin': {'sides': 9, 'num': 3}} With Probabilities:{'peter': 0.462057, 'colin': 0.464088, 'Draw': 0.073855}
+
+CASE 2
+
+Initial result for case:{'peter': {'sides': 8, 'num': 3}, 'colin': {'sides': 14, 'num': 1}} With Probabilities:{'peter': 0.824314, 'colin': 0.133035, 'Draw': 0.042651}
+Final result for fair game in case:{'peter': {'sides': 8, 'num': 5}, 'colin': {'sides': 14, 'num': 3}} With Probabilities:{'peter': 0.478442, 'colin': 0.47688, 'Draw': 0.044678}
+
+CASE 3
+
+Initial result for case:{'peter': {'sides': 3, 'num': 10}, 'colin': {'sides': 6, 'num': 1}} With Probabilities:{'peter': 1.0, 'colin': 0.0, 'Draw': 0.0}
+Final result for fair game in case:{'peter': {'sides': 3, 'num': 14}, 'colin': {'sides': 6, 'num': 8}} With Probabilities:{'peter': 0.465186, 'colin': 0.465432, 'Draw': 0.069382}
+
+CASE 4
+
+Initial result for case:{'peter': {'sides': 4, 'num': 1}, 'colin': {'sides': 20, 'num': 1}} With Probabilities:{'peter': 0.074911, 'colin': 0.874918, 'Draw': 0.050171}
+Final result for fair game in case:{'peter': {'sides': 4, 'num': 21}, 'colin': {'sides': 20, 'num': 5}} With Probabilities:{'peter': 0.486498, 'colin': 0.485373, 'Draw': 0.028129}
