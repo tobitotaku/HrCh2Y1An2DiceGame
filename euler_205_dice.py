@@ -48,8 +48,26 @@ def simulate_general_Euler_205(case:dict , num_of_experiments:int = 1_000_000): 
         # todo 2: Complete the implemetation of this function
         # start here ..............
 
+        total = 0
+        p1_wins = 0
+        p2_wins = 0
+        draws = 0
+        # all possible sum(dice rolls) of player_one
+        for i in range(1 * case[player_one]['num'], case[player_one]['sides'] * case[player_one]['num']):
+            
+            # all possible sum(dice rolls) of player_two
+            for j in range(1 * case[player_two]['num'], case[player_two]['sides'] * case[player_two]['num']):
+                total += 1
+                if i == j:
+                    draws += 1
+                elif i > j:
+                    p1_wins += 1
+                elif i < j:
+                    p2_wins += 1
 
-
+        winning_probability[player_one] = round(p1_wins / total, 2)
+        winning_probability[player_two] = round(p2_wins / total, 2)
+        winning_probability['Draw'] = round(draws / total, 2)
 
         # finish here ..............       
         return winning_probability # the result of the simulation will be returned here
