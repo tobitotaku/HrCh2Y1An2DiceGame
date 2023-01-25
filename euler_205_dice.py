@@ -90,6 +90,28 @@ def find_num_dice_equal_prob(case , max_num_dice=30):
     # start here ..............
     #
 
+    def recursive_fair_dices(case):
+        probs = simulate_general_Euler_205(case)
+        if case[player_one]['num'] >= max_num_dice or case[player_two]['num'] >= max_num_dice:
+            # max dices reached!
+            return False
+
+        if probs[player_one] == probs[player_two]:
+            return case
+
+        if probs[player_one] > probs[player_two]:
+            case[player_two]['num'] += 1
+            return recursive_fair_dices(case)
+
+        elif probs[player_one] < probs[player_two]:
+            case[player_one]['num'] += 1
+            return recursive_fair_dices(case)
+
+    # lets start at 1 dice
+    fair_case[player_one]['num'] = 1
+    fair_case[player_two]['num'] = 1
+    fair_case = recursive_fair_dices(fair_case)
+    fair_probs = simulate_general_Euler_205(fair_case)
 
     # finish here ..............       
     #here fair_case and fair_probs must be ready with the results of the search    
