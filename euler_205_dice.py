@@ -96,9 +96,11 @@ def find_num_dice_equal_prob(case , max_num_dice=30):
             # max dices reached!
             return False
 
+        # probability is equal, return case
         if probs[player_one] == probs[player_two]:
             return case
 
+        # balance the dices by fairness
         if probs[player_one] > probs[player_two]:
             case[player_two]['num'] += 1
             return recursive_fair_dices(case)
@@ -107,7 +109,7 @@ def find_num_dice_equal_prob(case , max_num_dice=30):
             case[player_one]['num'] += 1
             return recursive_fair_dices(case)
 
-    # lets start at 1 dice
+    # lets start at 1 dice each
     fair_case[player_one]['num'] = 1
     fair_case[player_two]['num'] = 1
     fair_case = recursive_fair_dices(fair_case)
